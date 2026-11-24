@@ -1,0 +1,10 @@
+These are DAX expressions, not Python scripts.
+-- Power BI DAX expressions documented in the workbook
+CALENDAR (
+DATE (
+Total Revenue =\nSUMX ( Sales, cleaned_sales_data_updated [Quantity] * cleaned_sales_data_updated [UnitPrice] )
+Total Orders =\nDISTINCTCOUNT ( cleaned_sales_data_updated [InvoiceNo] )
+Unique Customers =\nDISTINCTCOUNT ( cleaned_sales_data_updated [CustomerID] )
+If CustomerID contains blank values, DISTINCTCOUNT may include blank as a distinct value. If you want to exclude blanks, use:
+Unique Customers (No Blank) =\nCALCULATE (\n    DISTINCTCOUNT ( cleaned_sales_data_updated [CustomerID] ),\n    cleaned_sales_data_updated [CustomerID] <> BLANK ()\n)
+Average Order Value =\nDIVIDE ( [Total Revenue], [Total Orders], 0 )
