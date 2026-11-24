@@ -1,4 +1,4 @@
-# Retail Sales & Customer Performance Analysis (Days 16–30)
+# Retail Sales & Customer Performance Analysis 
 
 This repository structure was prepared from the selected source workbook `Day16-30(1).docx`. Code text has been extracted from that document and separated into day-wise files. SQL statements are stored separately from Python.
 
@@ -11,17 +11,16 @@ This repository structure was prepared from the selected source workbook `Day16-
 - Day 17/18 use `01_raw/online_retail_raw.csv`; Day 19 uses `data.csv`; Day 20 uses `04_outputs/day20_analysis_ready_sales.csv`; Day 21/22 use `sales_cleaned.csv`; Day 23 uses `retail_sales.csv`; Day 26 uses `data.csv`; Day 28 uses `cleaned_sales_data_updated.csv`. Place the correct source file at the path stated in each script or update it yourself only after confirming your local setup.
 
 ## Folder guide
-- Day 17: dataset loading and inspection
-- Day 18: data-quality audit
-- Day 19: cleaning and preprocessing
-- Day 20: KPI calculation
-- Day 21: SQLite loader and separate SQL queries
-- Day 22: sales trend analysis
-- Day 23: product/category analysis
-- Day 24–25: source workbook contains no executable code blocks
-- Day 26: diagnostic analysis
-- Day 27–28: Power BI DAX reference and dashboard validation
-- Day 29–30: written findings and finalization material only
+- 1: dataset loading and inspection
+- 2: data-quality audit
+- 3: cleaning and preprocessing
+- 4: KPI calculation
+- 5: SQLite loader and separate SQL queries
+- 6: sales trend analysis
+- 7: product/category analysis
+- 8 & 9: source workbook contains no executable code blocks
+- 10: diagnostic analysis
+- 11: Power BI DAX reference and dashboard validation
 
 ## Requirements mentioned in the workbook
 Python packages used in the documented snippets include `pandas`, `numpy`, `matplotlib`, and `scipy`. SQLite is used for the Day 21 database exercise. Install only the packages required by the script you are running.
